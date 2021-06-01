@@ -54,6 +54,7 @@ body{
 	color: white;
 	text-align: center;
 	transform: rotate(-10deg);
+	animation-delay: 3s;
 	animation-name: animate;
     animation-duration: 5s;
 }
@@ -106,6 +107,7 @@ body{
 
 .intro_top{
 	animation-name: fadein;
+	animation-delay: 3s;
 	animation-duration: 2s;
 }
 .shadow_gd{
@@ -137,6 +139,7 @@ body{
 	opacity: 0;
 	animation-fill-mode: forwards;
 	animation-name: fadeinnav;
+	animation-delay: 3s;
 	animation-duration: 2s;
 	transition: all .2s ease-in-out;
 }
@@ -151,7 +154,7 @@ body{
 	opacity: 0;
 	animation-fill-mode: forwards;
 	animation-name: fadeinnav;
-	animation-delay: 0.3s;
+	animation-delay: 3.3s;
 	animation-duration: 2s;
 }
 .navbar_what{
@@ -165,7 +168,7 @@ body{
 	opacity: 0;
 	animation-fill-mode: forwards;
 	animation-name: fadeinnav;
-	animation-delay: 0.1s;
+	animation-delay: 3.1s;
 	animation-duration: 2s;
 }
 .navbar_who{
@@ -179,7 +182,7 @@ body{
 	opacity: 0;
 	animation-fill-mode: forwards;
 	animation-name: fadeinnav;
-	animation-delay: 0.2s;
+	animation-delay: 3.2s;
 	animation-duration: 2s;
 }
 @keyframes fadeinnav{
@@ -242,7 +245,6 @@ a{
 }
 .h3 [data-scroll="out"]{
 	opacity: 1;
-	transform: translateY(-10px);
 	transition: all .2s ease-in-out;
 }
 .img_bottom{
@@ -277,15 +279,15 @@ a{
 .p_box_1{
 	position: absolute;
 	width: 100%;
-	height: 300px;
-	top: 355px;
+	height: 310px;
+	top: 365px;
 	overflow: hidden;
 }
 .g_bottom{
 	position: absolute;
 	height: 10px;
 	width: 100%;
-	bottom: 630px;
+	bottom: 640px;
 	font-size: 400px;
 	font-family: 'Inter', sans-serif;
 	color: #ffffff;
@@ -315,7 +317,7 @@ a{
 	position: absolute;
 	width: 100%;
 	height: 300px;
-	top: 110px;
+	top: 120px;
 	overflow: hidden;
 }
 .second_bottom{
@@ -343,7 +345,74 @@ a{
 	left: 30%;
 	transform: rotate(20deg);
 }
-
-
+.load_in{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #eb3434;
+	animation-name: load_out;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-delay: 3s;
+}
+@keyframes load_out{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+.load_in_animation{
+	position: absolute;
+	width: 100%;
+  height: 100px;
+	top: 250px;
+}
+.load_in_animation_1{
+	position: absolute;
+	width: 100px;
+  height: 100px;
+  left: 46%;
+  border-radius: 100px;
+  overflow: hidden;
+  animation-name: fade_out_animation;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  animation-duration: 1s;
+}
+@keyframes fade_out_animation{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+.load_in_animation_2{
+	position: absolute;
+	width: 100px;
+  height: 50px;
+  left: 0px;
+  top: 25px;
+  border-radius: 25px;
+  background-color: white;
+  animation-name: rotate;
+  animation-duration: 3s;
+}
+@keyframes rotate{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+.load_in_animation_3{
+	position: absolute;
+	width: 90px;
+  height: 90px;
+  left: 5px;
+  top: 5px;
+  border-radius: 45px;
+  background-color: #eb3434;
+}
+.GD_animation{
+    position: absolute;
+    font-size: 40px;
+    left: 15px;
+    top: 25px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
 
 
