@@ -41,7 +41,22 @@ body{
     animation-duration: 3s;
 }
 .what_2{
-
+    position: absolute;
+    top: 290px;
+    left: 265px;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    animation-name: scalex;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes scalex{
+    0%{transform: scaleX(1.0);}
+    0%{opacity: 0;}
+    100%{transform: scaleX(2.4);}
+    100%{opacity: 1;}
 }
 .under_what{
     position: absolute;
