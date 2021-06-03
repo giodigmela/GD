@@ -1,5 +1,5 @@
 body{
-	background-color: #eb3434;
+	background-color: #fcba03;
 	overflow-x: hidden;
 	height: 100%;
 }
@@ -26,20 +26,20 @@ body{
 	top: 400px;
 	border-top-color: transparent;
 	box-shadow:
-    0px 0px 150px 150px #d62d2d;
+    0px 0px 150px 150px #f0b102;
 }
 .shadow_1{
 	position: absolute;
 	top: 0px;
 	width: 100%;
 	height: 300px;
-	background-color: #eb3434;
+	background-color: #fcba03;
 }
 .shadow_2{
 	position: absolute;
 	width: 100%;
 	box-shadow:
-    0px 0px 20px 20px #eb3434;
+    0px 0px 20px 20px #fcba03;
 }
 .gd{
 	position: absolute;
@@ -114,9 +114,9 @@ body{
 	position: absolute;
 	width: 200px;
 	height: 10px;
-	background-color: #d62d2d;
+	background-color: #f0b102;
 	box-shadow:
-    0px 0px 50px 50px  #d62d2d;
+    0px 0px 50px 50px  #f0b102;
     bottom: 0px;
     right: 206px;
 }
@@ -127,11 +127,12 @@ body{
 	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
+	z-index: 1;
 }
 .navbar_intro{
 	position: absolute;
 	left: 60px;
-    font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 	font-size: 15px;
 	color: white;
 	letter-spacing: 1px;
@@ -221,7 +222,7 @@ a{
 	top: 0;
 	width: 100%;
 	height: 600px;
-	background-color: #eb3434;
+	background-color: #fcba03;
 }
 
 
@@ -327,7 +328,7 @@ a{
 	bottom: 340px;
 	font-size: 400px;
 	font-family: 'Inter', sans-serif;
-	color: #ff4f4f;
+	color: #ffc117;
 }
 .second_half [data-scroll="in"]{
 	opacity: 0;
@@ -350,7 +351,7 @@ a{
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: #eb3434;
+	background-color: #fcba03;
 	animation-name: load_out;
 	animation-fill-mode: forwards;
 	animation-duration: 1s;
@@ -404,7 +405,7 @@ a{
   left: 5px;
   top: 5px;
   border-radius: 45px;
-  background-color: #eb3434;
+  background-color: #fcba03;
 }
 .GD_animation{
     position: absolute;
@@ -506,5 +507,21 @@ a{
 .instagram:hover{
 	opacity: 0.7;
 }
+.under_intro{
+	position: absolute;
+	height: 2px;
+	left: 5px;
+	width: 40px;
+	border-radius: 2.5px;
+	background-color: white;
+	top: 20px;
+	animation-name: slide_in;
+	animation-delay: 3s;
+	animation-duration: 5s;
+}
 
+@keyframes slide_in{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
 

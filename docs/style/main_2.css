@@ -1,0 +1,140 @@
+body{
+    background-color: #4287f5;
+}
+.shadow{
+    position: relative;
+    width: 100%;
+    top: 400px;
+    border-top-color: transparent;
+    box-shadow:
+    0px 0px 150px 150px #3678e0;
+}
+.shadow_1{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+    background-color: #4287f5;
+}
+.shadow_2{
+    position: absolute;
+    width: 100%;
+    box-shadow:
+    0px 0px 20px 20px  #4287f5;
+}
+.what{
+    position: absolute;
+    left: -50px;
+    top: 200px;
+    width: 100%;
+    height: 300px;
+}
+.what_1{
+    position: absolute;
+    left: 100px;
+    height: 100%;
+    width: 600px;
+    font-family: 'Inter', sans-serif;
+    font-size: 300px;
+    color: white;
+    animation-name: fade_in;
+    animation-duration: 3s;
+}
+.what_2{
+
+}
+.under_what{
+    position: absolute;
+    height: 2px;
+    left: 3px;
+    width: 40px;
+    border-radius: 2.5px;
+    background-color: white;
+    top: 20px;
+    animation-name: slide_in;
+    animation-delay: 3s;
+    animation-duration: 5s;
+}
+@keyframes fade_in{
+    0%{transform: translateX(-70px);}
+    0%{opacity: 0;}
+    40%{transform: translateX(0px);}
+    100%{transform: translateX(0px);}
+    100%{opacity: 1;}
+}
+.navbar{
+    position: relative;
+    top: 30px;
+    height: 50px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+.navbar_intro{
+    position: absolute;
+    left: 60px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    top: 10px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeinnav;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    transition: all .2s ease-in-out;
+}
+.navbar_work{
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    top: 10px;
+    right: 60px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeinnav;
+    animation-delay: 0.3s;
+    animation-duration: 2s;
+}
+.navbar_what{
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    top: 10px;
+    left: 140px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeinnav;
+    animation-delay: 0.1s;
+    animation-duration: 2s;
+}
+.navbar_who{
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    top: 10px;
+    left: 220px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeinnav;
+    animation-delay: 0.2s;
+    animation-duration: 2s;
+}
+@keyframes fadeinnav{
+    0%{opacity: 0;}
+    0%{transform: translateY(-20px);}
+    100%{transform: translateY(0px);}
+    100%{opacity: 1;}
+}
+a{
+    text-decoration: none;
+    color: white;
+}
